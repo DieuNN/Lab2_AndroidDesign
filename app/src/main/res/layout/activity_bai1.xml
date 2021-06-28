@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Bai1">
 
+    <TextView
+        android:id="@+id/lblBai1"
+        android:layout_width="369dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="18pt"
+        android:textColor="#f54242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
