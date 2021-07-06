@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CauHoi.Bai5"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageCauHoi2"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/trac_nghiem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdoGroupCauHoi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageCauHoi2">
+
+        <RadioButton
+            android:id="@+id/rdoACau2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đáp án A" />
+        <RadioButton
+            android:id="@+id/rdoBCau2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đáp án B" />
+        <RadioButton
+            android:id="@+id/rdoCCau2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đáp án C" />
+        <RadioButton
+            android:id="@+id/rdoDCau2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đáp án D" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkConfirmedCau2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdoGroupCauHoi2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="6dp"
+        android:text="Xác nhận" />
+
+    <Button
+        android:id="@+id/btnSubmitCauHoi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkConfirmedCau2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Trả lời" />
+</RelativeLayout>

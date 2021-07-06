@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.lab2.CauHoi.Bai5
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,11 @@ class MainActivity : AppCompatActivity() {
         val bai4:Button = findViewById(R.id.btnBai4)
         bai4.setOnClickListener {
             startActivity(Intent(this, Bai4::class.java))
+        }
+
+        val bai5:Button = findViewById(R.id.btnBai5)
+        bai5.setOnClickListener {
+            startActivity(Intent(this, Bai5::class.java))
         }
     }
 }
