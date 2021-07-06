@@ -35,5 +35,10 @@ class MainActivity : AppCompatActivity() {
         bai5.setOnClickListener {
             startActivity(Intent(this, Bai5::class.java))
         }
+
+        val quanLySanPham:Button = findViewById(R.id.btnQuanLySanPham)
+        quanLySanPham.setOnClickListener {
+            startActivity(Intent(this, QuanLySanPham::class.java))
+        }
     }
 }

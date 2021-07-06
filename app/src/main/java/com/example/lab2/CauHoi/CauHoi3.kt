@@ -9,19 +9,17 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.RadioButton
 import android.widget.Toast
+import com.example.lab2.MainActivity
 import com.example.lab2.R
 
-class CauHoi2 : AppCompatActivity() {
+class CauHoi3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cau_hoi2)
+        setContentView(R.layout.activity_cau_hoi3)
 
-
-        //D is correct answer
         val chkConfirmed: CheckBox = findViewById(R.id.chkConfirmedCau3)
         val btnSubmit: Button = findViewById(R.id.btnSubmitCauHoi3)
-        val correctAnswer: RadioButton = findViewById(R.id.rdoCCau2)
-
+        val correctAnswer: RadioButton = findViewById(R.id.rdoCCau3)
         btnSubmit.isEnabled = false
 
         chkConfirmed.setOnCheckedChangeListener { _, checked -> let {
@@ -30,15 +28,15 @@ class CauHoi2 : AppCompatActivity() {
 
         btnSubmit.setOnClickListener {
             if(correctAnswer.isChecked) {
-                Toast.makeText(this, "Bạn đã trả lời đúng! Chuyển sang câu hỏi tiếp theo!", Toast.LENGTH_SHORT).show()
-
+                Toast.makeText(this, "Bạn đã trả lời đúng! Trở về màn hình đầu tiên", Toast.LENGTH_SHORT).show()
                 Handler(Looper.getMainLooper()).postDelayed({
-                    startActivity(Intent(this, CauHoi3::class.java))
+                    startActivity(Intent(this, MainActivity::class.java))
                 }, 2000)
             } else {
-                Toast.makeText(this, "Bạn đã trả lời sai! Hãy chọn đáp án khác!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Bạn đã trả lời sai", Toast.LENGTH_SHORT).show()
             }
         }
+
 
     }
 }
