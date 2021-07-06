@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.*
-import androidx.core.os.HandlerCompat.postDelayed
 import com.example.lab2.R
 
 class Bai5 : AppCompatActivity() {
