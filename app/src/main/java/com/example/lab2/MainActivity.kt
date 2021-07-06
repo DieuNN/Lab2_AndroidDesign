@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.lab2.CauHoi.Bai5
+import com.example.lab2.quanLySanPhamActivity.ThemSanPham
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         val quanLySanPham:Button = findViewById(R.id.btnQuanLySanPham)
         quanLySanPham.setOnClickListener {
-            startActivity(Intent(this, QuanLySanPham::class.java))
+            startActivity(Intent(this, ThemSanPham::class.java))
         }
     }
 }

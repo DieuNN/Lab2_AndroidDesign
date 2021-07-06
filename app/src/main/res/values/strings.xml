@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Lab2</string>
+    <string name="product_name">Tên sản phẩm</string>
+    <string name="amount">Số lượng</string>
+    <string name="import_price">Đơn giá nhập</string>
+    <string name="export_price">Đơn giá bán </string>
+    <string name="status">Trạng thái</string>
+    <string name="employee_name">Tên nhân viên</string>
+    <string name="date_of_birth">Ngày sinh </string>
+    <string name="gender">Giới tính</string>
+    <string name="address">Địa chỉ </string>
+    <string name="phone_number">Số điện thoại </string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu </string>
+    <string name="available">Có sẵn</string>
+    <string name="not_available" >Hết hàng</string>
 </resources>
