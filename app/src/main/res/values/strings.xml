@@ -14,4 +14,5 @@
     <string name="password">Mật khẩu </string>
     <string name="available">Có sẵn</string>
     <string name="not_available" >Hết hàng</string>
+    <string name="add_new">Thêm mới</string>
 </resources>
