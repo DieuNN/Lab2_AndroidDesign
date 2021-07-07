@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.lab2.CauHoi.Bai5
+import com.example.lab2.quanLySanPhamActivity.ThemNhanVien
 import com.example.lab2.quanLySanPhamActivity.ThemSanPham
 
 class MainActivity : AppCompatActivity() {
@@ -37,8 +38,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Bai5::class.java))
         }
 
-        val quanLySanPham:Button = findViewById(R.id.btnQuanLySanPham)
-        quanLySanPham.setOnClickListener {
+        val themNhanVien:Button = findViewById(R.id.btnThemNhanVien)
+        themNhanVien.setOnClickListener {
+            startActivity(Intent(this, ThemNhanVien::class.java))
+        }
+
+        val themSanPham:Button = findViewById(R.id.btnThemSanPham)
+        themSanPham.setOnClickListener {
             startActivity(Intent(this, ThemSanPham::class.java))
         }
     }
