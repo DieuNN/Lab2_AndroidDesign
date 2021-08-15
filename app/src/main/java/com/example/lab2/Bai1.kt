@@ -16,7 +16,7 @@ class Bai1 : AppCompatActivity() {
         text.typeface = font
 
 
-
+// =IF(LEFT(RIGHT(B3;4);2)="L2";INDEX(BANG_GIA!$C$4:$E$7;MATCH(MAIN_DATA!F3;BANG_GIA!$B$4:$B$7;0);MATCH("SÔNG HỒNG";BANG_GIA!$C$3:$E$3));INDEX(BANG_GIA!$C$4:$E$7;MATCH(MAIN_DATA!F3;BANG_GIA!$B$4:$B$7;0);MATCH("SÔNG HỒNG";BANG_GIA!$C$3:$E$3))/1,5)
 
 
 
